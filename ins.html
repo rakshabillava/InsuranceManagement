@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insurance details </title>
+    <link rel="stylesheet" href="ins.css">
+</head>
+<body>
+<form action="ins.php" method="post">
+    <h1>INSURANCE DETAILS </h1>
+    <br>
+    <!-- <label>INSURANCE ID :</label>
+    <input type="text" name="insurance_id" list="scheme" required><br> -->
+    <label>INSURANCE TYPE :</label>
+       <select name="ins_type">
+            <option disabled selected>INSURANCE</option>
+            <option>CHILD INSURANCE</option>
+            <option>TERM INSURANCE</option>
+            <option>ENDOWMENT INSURANCE</option>
+            <option>MONEY BACK INSURANCE </option>
+            <option>UNIT LINK INSURANCE </option>
+             <option>WHOLE LIFE INSURANCE </option>
+    </select><br>
+    <label>INSURANCE SCHEME :</label>
+    <input type="text" name="ins_scheme" list="scheme" required><br>
+     <label>MINIMUM SUM ASSURED :</label>
+    <input type="text" name="min_sum_a" list="min" required><br>
+    <label>MAXIMUM SUM ASSURED :</label>
+    <input type="text" name="max_sum_a" list="max" required><br>
+    <label>DATE OF COMMENCEMENT :</label>
+    <input type="date" name="doc" list="doc" required><br>
+    <br>
+    <br>
+    <!-- <a href="CUSTNOM.html"><input type="button" value="SUBMIT" class="insbtn"></a> -->
+    <input type="submit" value="SUBMIT" class="insbtn" name="insbtn">
+    <br>
+    <br>
+</form>
+</body>
+</html>

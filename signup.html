@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+<form action="signup.php" method="post">
+    <h1>Signup</h1>
+    <input type="text" name="name" placeholder="Full name" required>
+  
+    <!-- <input type="text" name="gender" list="sex" placeholder="Gender">
+    <datalist id="sex">
+            <option>F</option>
+            <option>M</option>
+            <option>O</option>
+    </datalist> -->
+
+    <select id="sex" name="gender" required>
+        <option disabled selected class="new">Gender</option>
+        <option class="genvalue">F</option>
+        <option class="genvalue">M</option>
+        <option class="genvalue">O</option>
+    </select>
+    <input type="date" name="dob" placeholder="Dob" class="DOB" required>
+    <input type="text" name="mbl" placeholder="Mobile no" required>
+    <input type="text" name="address" placeholder="Address" required>
+    <input type="email" name="gmail" placeholder="Email" required>
+    <input type="password" name="paswd" placeholder="Password" required>
+    <div class="nextsign">
+        <!-- <a href="index.html"> <input type="button" name="signbt" value="SIGN UP" class="signbtn"> </a> -->
+        <input type="submit" name="signbt" value="SIGN UP" class="signbtn">   
+</div>
+</form>
+</body>
+</html>
